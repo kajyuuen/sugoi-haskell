@@ -1,0 +1,5 @@
+# Sugoi Haskell
+
+```shell
+$ ghci
+```
