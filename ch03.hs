@@ -70,16 +70,16 @@ firstLetter all@(x:xs) = "The first letter of" ++ all ++ " is " ++ [x]
 --     | otherwise = "Very Fat"
 --     where bmi = weight / height ^ 2
 
--- bmiTell :: Double -> Double -> String
--- bmiTell weight height
---     | bmi <= skinny = "Underweight"
---     | bmi <= normal = "Normal"
---     | bmi <= fat = "Fat"
---     | otherwise = "Very Fat"
---     where bmi = weight / height ^ 2
---           skinny = 18.5
---           normal = 25.0
---           fat = 30.0
+bmiTell :: Double -> Double -> String
+bmiTell weight height
+    | bmi <= skinny = "Underweight"
+    | bmi <= normal = "Normal"
+    | bmi <= fat = "Fat"
+    | otherwise = "Very Fat"
+    where bmi = weight / height ^ 2
+          skinny = 18.5
+          normal = 25.0
+          fat = 30.0
 
 bmiTell :: Double -> Double -> String
 bmiTell weight height
